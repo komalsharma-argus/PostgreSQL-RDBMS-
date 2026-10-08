@@ -1,0 +1,11 @@
+Identified the normalization issues in this table:
+
+1. The student_courses table contains the information about multiple entities in a single table. These entities are: 
+    a) student
+    b) instructor
+    c) course
+    d) enrollment
+    
+2. Data Redundancy: Since a single table stores information about multiple entities it leads to repetition of information of a single entity multiple times i.e. data redundancy
+
+3. DML Commands Anomaly: Having information of multiple entities in a single table leads to issues with insert, update and delete commands of a single entity separately which also leads to data inconsistency.
